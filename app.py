@@ -1,4 +1,6 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 from sklearn.cluster import KMeans
 
 # 1. Load the data
@@ -20,3 +22,10 @@ summary = df.groupby('Cluster').agg({
 
 print("✅ Success! You've segmented your customers.")
 print(summary)
+# Create a visual scatter plot of the clusters
+plt.figure(figsize=(10, 6))
+sns.scatterplot(data=df, x='Annual Income (k$)', y='Spending Score (1-100)', 
+                hue='Cluster', palette='viridis', s=100)
+plt.title('Customer Segments: Income vs Spending')
+plt.savefig('customer_clusters.png')  # This saves the "Dashboard" image
+print("✅ Dashboard visual saved as 'customer_clusters.png'")
