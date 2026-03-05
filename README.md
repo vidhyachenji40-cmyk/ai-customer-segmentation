@@ -13,7 +13,7 @@ This project transforms raw retail data into actionable business intelligence. I
 - **Automation:** Replaced manual data interpretation with LLM-driven persona generation.
 - **Scalability:** Built a modular pipeline that can handle thousands of customer records.
 - **Insight:** Provides instant, natural-language marketing tips for retail managers.
-- 
+  
 ## 📊 Customer Segmentation Table
 | Cluster | Profile | Business Persona | Marketing Strategy |
 | :--- | :--- | :--- | :--- |
